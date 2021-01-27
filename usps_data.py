@@ -119,7 +119,7 @@ class USPSData:
                 self.df.at[index, 'QUARTER'] = newQuarter
                 
         self.pghdf = self.pghdf.append(self.df)
-        b = self.endFileName + "_Columns_Added.csv"
+        b = self.endFileName + "Penn_Only_and_Columns_Added.csv"
         self.df.to_csv(b)
         c = self.finalPghFile
         c = str(c)
